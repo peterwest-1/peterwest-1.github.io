@@ -1,0 +1,109 @@
+
+/* ---------------------------------
+4. SLIDER
+--------------------------------- */
+
+.main-slider{ height: 500px; position: relative; z-index: 1; background-size: cover; color: #fff; }
+
+.main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .8;
+	z-index: -1; background: linear-gradient(15deg, #ff6a00 0%, #FE018F 100%); }
+
+.slider-content .hand-writing{ margin-top: -10px; font-size: 6em; letter-spacing: 4px; font-family: Allura; }
+
+.slider-content .pre-heading{ margin-bottom: 10px; letter-spacing: 1px; }
+
+.slider-content .slider-btn{ margin-top: 30px; border-color: #fff; color: #fff; }
+
+
+
+/* ---------------------------------
+5. FEATURED SECTION
+--------------------------------- */
+
+.featured-section .featured{ width: 55%; padding-right: 60px; }
+
+.featured-section .box-area{ width: 45%; position: absolute; top: 0; bottom: 0; right: 0; }
+
+.featured-section .box-area img{ width: auto; height: 100%; max-width: 350px; }
+
+
+
+/* ---------------------------------
+6. TEAM SECTION
+--------------------------------- */
+
+.team-section{ overflow: hidden; }
+
+.team-section .team{ width: 25%; float: left; position: relative; z-index: 1; }
+
+.team-section .team .hover-color{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0;
+	z-index: 1; transition: all .2s; background: linear-gradient(15deg, #ff6a00 0%, #FE018F 100%); }
+
+.team-section .team .hover-color:before,
+.team-section .team .hover-color:after{ content:''; position: absolute; top: 50%; width: 3px;
+	left: 50%; margin: -20px 0 0 -2px; height: 40px; opacity: 0;
+	transition: all .2s ease-out; background: #fff; }
+
+.team-section .team .hover-color:before{ transform: translateY(-50px); }
+
+.team-section .team .hover-color:after{ transform: rotate(90deg) translateX(50px); }
+
+.team-section .team:hover .hover-color:before{ transform: translateY(0px); opacity: 1; }
+
+.team-section .team:hover .hover-color:after{ transform: rotate(90deg) translateX(0px); opacity: 1; }
+
+.team-section .team:hover .hover-color{ opacity: 1; }
+
+
+
+/* ---------------------------------
+7. ABOUT SECTION
+--------------------------------- */
+
+.about{ width: 33.33%; float: left; position: relative; padding: 80px; }
+
+.about:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0;
+	z-index: -1; transition: all .2s; background: linear-gradient(15deg, #ff6a00 0%, #FE018F 100%); }
+
+.about:hover{ color: #fff; }
+
+.about:hover .desc{ color: #eee; }
+
+.about:hover .btn-border{ border-color: #eee; border-image: none; }
+
+.about:hover:after{ opacity: 1; }
+
+.about .btn-border:hover{ background: #fff!important; color: #222; }
+
+.about .btn-border:after{ opacity: 0; }
+
+
+
+/* ---------------------------------
+8. CLIENT SECTION
+--------------------------------- */
+
+.client-section{ padding: 60px 0; }
+
+.client-section .swiper-slide a:hover img{  -webkit-filter: grayscale(0%); filter: grayscale(0%);  }
+
+.client-section .swiper-slide img{ transition: all .2s;
+	-webkit-filter: grayscale(100%); filter: grayscale(100%); }
+
+.client-section .swiper-slide-active img{ -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+
+
+/* ---------------------------------
+9. FOOTER
+--------------------------------- */
+
+footer{ padding: 80px 30px 40px; background: #120F22; color: #fff; }
+
+footer .logo img{ height: 50px; width: auto; }
+
+footer .footer-section{ padding-left: 20px; }
+
+footer .footer-section .title{ position: relative; }
+
+footer .footer-section .title:after{ content:''; position: absolute; top: 5px; left: -20px; height: 12px;
+	width: 12px; border-radius: 12px; background:  linear-gradient(15deg, #ff6a00 0%, #FE018F 100%); }

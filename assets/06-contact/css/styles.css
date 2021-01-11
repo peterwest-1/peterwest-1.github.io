@@ -1,0 +1,87 @@
+
+/*
+====================================================
+
+* 	[Master Stylesheet]
+
+	Theme Name :
+	Version    :
+	Author     :
+	Author URI :
+
+====================================================
+
+	TOC
+
+	1. RIMARY STYLES
+	2. COMMONS FOR PAGE DESIGN
+		BUTTON COMMON
+		BUTTON WITH BORDER
+		BUTTON WITH BACKGROUND
+		BUTTON WITH UNDELINE
+		GRADIENT ICON
+	3. MENU
+		LOGO
+		MAIN AREA
+		NAV ICON
+	4. SLIDER
+	5. CONTACT
+		CONTACT FORM
+		ADDRESS
+		MAP AREA
+	6. FOOTER
+
+====================================================
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* ---------------------------------
+4. SLIDER
+--------------------------------- */
+
+.main-slider{ height: 500px; position: relative; z-index: 1; background-size: cover; color: #fff; }
+
+.main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .8;
+	z-index: -1; background: linear-gradient(15deg, #00467F 0%, #A5CC82 100%); }
+
+.slider-content .hand-writing{ margin-top: -10px; font-size: 6em; letter-spacing: 4px; font-family: Allura; }
+
+.slider-content .pre-heading{ margin-bottom: 10px; letter-spacing: 1px; }
+
+.slider-content .slider-btn{ margin-top: 30px; border-color: #fff; color: #fff; }
+
+
+
+/* ---------------------------------
+5. CONTACT
+--------------------------------- */
+
+/* CONTACT FORM */
+
+.contact-form textarea,
+.contact-form input{ border: 0; outline: 0; background: #F5EDFA; border-bottom: 2px solid transparent; }
+
+.contact-form input{ height: 45px; line-height: normal; width: 100%; padding: 0 20px; }
+
+.contact-form textarea{ width: 100%; padding: 15px 20px; }
+
+.contact-form input:focus,
+.contact-form textarea:focus{ border-color: #ff6a00;
+	border-image: linear-gradient(to right, #00467F 0%, #A5CC82 100%); border-image-slice: 1;  }
+
+
+/* ADDRESS */
+
+.address{ padding-left: 20px; }
+
+.address .title{ position: relative; }
+
+.address .title:after{ content:''; position: absolute; top: 5px; left: -20px; height: 12px;
+	width: 12px; border-radius: 12px; background:  linear-gradient(15deg, #00467F 0%, #A5CC82 100%); }
+
+
+/* MAP AREA */
+
+.map-section{ margin-bottom: 80px; }

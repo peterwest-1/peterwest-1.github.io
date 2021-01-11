@@ -1,0 +1,22 @@
+
+.main-slider{ height: 500px; position: relative; z-index: 1; background-size: cover; color: #fff; }
+
+.main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .8;
+	z-index: -1; background: linear-gradient(15deg, #00467F 0%, #A5CC82 100%); }
+
+.slider-content .hand-writing{ margin-top: -10px; font-size: 6em; letter-spacing: 4px; font-family: Allura; }
+
+.slider-content .pre-heading{ margin-bottom: 10px; letter-spacing: 1px; }
+
+.slider-content .slider-btn{ margin-top: 30px; border-color: #fff; color: #fff; }
+
+
+/* ---------------------------------
+5. BLOG STYLING
+--------------------------------- */
+
+.single-post .read-more-btn{ padding: 0; height: 50px; width: 50px; line-height: 50px; }
+
+.blog-section ul.blog-pagination > li > a{ padding-right: 5px; }
+
+.blog-section ul.blog-pagination > li.active > a{ color: #FF0066; }
