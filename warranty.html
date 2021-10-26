@@ -164,14 +164,19 @@
             <div class="margin-b-30">
               <!-- <a class="logo margin-b-10" href="#"><img src="images/logo-white.png" alt="Logo"></a> -->
               <p class="margin-tb-20">
-                26 year old student from Cape Town, South Africa. Trying to do
-                interesting things. Also, who reads these things?
+                <script>
+                  document.write(new Date().getFullYear() - 1994);
+                </script>
+                year old student from Cape Town, South Africa.
               </p>
-
               <p></p>
               <p class="font-black-lite copyright">
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy; 2021 All rights reserved | Maintained by
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | Maintained by
                 <a class="footer-link" href="@" target="_blank" rel="noopener"
                   >Peter West Media</a
                 >
@@ -188,12 +193,30 @@
 
           <div class="hidden-lg-down col-xl-2"></div>
 
-          <div class="col-md-6 col-lg-3 col-xl-2">
+          <div class="col-md-6 col-lg-3 col-xl-4">
             <div class="footer-section margin-b-30">
               <h5 class="title margin-b-20"><b>Get In Contact</b></h5>
-              <p>Cape Town, South Africa</p>
-              <p class="margin-tb-10">+00 000 000 0000</p>
-              <p>peterwestmedia@gmail.com</p>
+              <!-- <p>Cape Town, South Africa</p> -->
+              <!-- <p class="margin-b-20">+00 000 000 0000</p> -->
+              <p><a href="mailto:peterwest86@gmail.com"> - Email</a></p>
+              <p>
+                <a
+                  href="https://github.com/peterwest-1"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  - GitHub</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/peter-west-a1b93b142/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  - LinkedIn</a
+                >
+              </p>
             </div>
           </div>
         </div>
