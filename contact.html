@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+
+
+    <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Warranty | Peter West Media</title>
+    <title>Explore | Peter West Media</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -44,118 +46,80 @@
       <!-- container -->
     </header>
 
-    <ul class="site-navigation">
-      <li>
-        <a class="nav-btn btn-prev" href="#"><i class="ion-chevron-up"></i></a>
-      </li>
-      <li>
-        <a href="#home"><span class="tool-tip">Home</span></a>
-      </li>
-      <li>
-        <a href="#social-section"><span class="tool-tip">Links</span></a>
-      </li>
-      <li>
-        <a href="#intro"><span class="tool-tip">About</span></a>
-      </li>
-      <li>
-        <a href="#projects"><span class="tool-tip">Projects</span></a>
-      </li>
-      <li>
-        <a href="#portfolio"><span class="tool-tip">Portfolio</span></a>
-      </li>
+    <div class="main-slider" style="background-image: url(images/slider-1-1920x1080-1.jpg);">
+        <div class="display-table center-text">
+            <div class="display-table-cell">
+                <div class="slider-content">
 
-      <li>
-        <a href="#blog"><span class="tool-tip">Blog</span></a>
-      </li>
-      <li>
-        <a class="nav-btn btn-next" href="#"
-          ><i class="ion-chevron-down"></i
-        ></a>
-      </li>
-    </ul>
+                    <h5 class="pre-heading">Get in touch</h5>
+                    <h1><b>Contact</b></h1>
 
-    <div
-      class="main-slider"
-      id="home"
-      style="background-image: url(assets/images/pexels-photo-175032.jpeg)"
-    >
-      <a class="scroll-down-btn" href="#social-section"
-        >Scroll Down <i class="ion-chevron-right"></i
-        ><i class="ion-chevron-right"></i
-      ></a>
+                </div><!-- slider-content-->
+            </div><!--display-table-cell-->
+        </div><!-- display-table-->
+    </div><!-- main-slider -->
 
-      <div class="display-table center-text">
-        <div class="display-table-cell">
-          <div class="slider-content">
-            <h5 class="pre-heading">SwiftUI, CoreData, MVVM</h5>
-            <h1><b>Warranty | iOS</b></h1>
-            <h4 class="post-heading">
-              <a href="/warranty-privacy.html"
-                ><span class="tool-tip">Privacy Policy</span></a
-              >
-            </h4>
-          </div>
-          <!-- slider-content-->
-        </div>
-        <!--display-table-cell-->
-      </div>
-      <!-- display-table-->
-    </div>
-    <!-- main-slider -->
 
-    <div class="social-section" id="social-section">
-      <div class="container">
-        <ul>
-          <li>Links</li>
-          <li>
-            <a
-              href="https://github.com/peterwest-1"
-              target="_blank"
-              rel="noopener"
-              ><i class="ion-social-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/peter-west-a1b93b142/"
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="ion-social-linkedin-outline"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <!-- container-->
-    </div>
-    <!-- social-section -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="row">
 
-    <section class="intro-section" id="intro">
-      <div
-        class="image-wrapper"
-        style="background-image: url(assets/images/intro-image-1000x1000.jpg)"
-      >
-        <a href="#"><i class="icon ion-ios-plus-empty"></i></a>
-      </div>
 
-      <div class="container">
-        <div class="intro section">
-          <h3>
-            <b><span class="font-black">About Warranty</span></b>
-          </h3>
-          <p class="margin-tb-20">
-            An iOS 14 Application that allows users to store various types or
-            receipts and warrantys and get notified as they are about to reach
-            their expiry
-          </p>
-          <!-- <a class="btn btn-border margin-b-30" href="#"><b>DISCOVER IT</b>
-          <i class="ion-chevron-right"></i><i class="ion-chevron-right"></i></a> -->
-        </div>
-        <!-- intro-->
-      </div>
-      <!-- container-->
-    </section>
-    <!-- intro-section -->
+                    <div class="contact-form">
+                        <form method="post">
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <input class="margin-b-30" type="text" placeholder="Your name"/>
+                                </div><!-- col-sm-6 -->
+
+                                <div class="col-sm-6">
+                                    <input class="margin-b-30" type="text" placeholder="Your email"/>
+                                </div><!-- col-sm-6 -->
+
+                                <div class="col-sm-12">
+                                    <input class="margin-b-30" type="text" placeholder="Subject"/>
+                                </div><!-- col-sm-12 -->
+
+                                <div class="col-sm-12">
+                                    <textarea class="margin-b-30" rows="6" placeholder="Message"></textarea>
+                                </div><!-- col-sm-12 -->
+
+                                <div class="col-sm-12">
+                                    <button class="btn btn-border margin-b-30" type="submit" name="submit"><b>SEND IT</b>
+                                        <i class="ion-chevron-right"></i><i class="ion-chevron-right"></i></button>
+                                </div><!-- col-sm-12 -->
+
+                            </div><!-- row -->
+                        </form>
+                    </div><!-- contact-form -->
+
+
+                </div><!-- col-sm-4 -->
+
+            </div><!-- row -->
+        </div><!-- container -->
+    </section><!-- contact-section -->
+
+
+    <section class="map-section">
+        <div class="container">
+            <div id="map" style="height:500px;width: 100%"></div>
+            <script>
+                  function initMap() {
+                    var uluru = {lat: 56.946285, lng: 24.105078};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 4,
+                        center: uluru
+                    });
+                  }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8Nkl4q13z00Fid3Vh8eOp4mqVlgfcXLA&callback=initMap">
+            </script>
+
+        </div><!-- container -->
+    </section><!-- map-section -->
 
     <footer>
       <div class="container-fluid">
